@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="620.0" stylesheets="@../../../../java/com/mycompany/app/style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.app.FXMLaddstudentController">
+   <children>
+      <ImageView fx:id="studentImageView" fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/App/images/iconstudent.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="41.0" text="STUDENT INFORMATION">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="170.0" layoutY="88.0" prefHeight="45.0" prefWidth="428.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="First Name">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firstNameField" alignment="CENTER" prefHeight="26.0" prefWidth="312.0" promptText="First Name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="325.0" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" layoutX="170.0" layoutY="150.0" prefHeight="45.0" prefWidth="428.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="Last Name">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="lastNameField" alignment="CENTER" prefHeight="26.0" prefWidth="312.0" promptText="Last Name">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="213.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="D.O.B">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dateofbirthPicker" prefHeight="37.0" prefWidth="464.0" promptText="Date of Birth" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="277.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="107.0" text="Sex">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="maleRadioButton" mnemonicParsing="false" text="Male">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="femaleRadioButton" mnemonicParsing="false" text="Female">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="otherRadioButton" mnemonicParsing="false" text="Others">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="341.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="Email">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailField" prefHeight="40.0" prefWidth="468.0" promptText="Email">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="408.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="Address">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addressField" prefHeight="39.0" prefWidth="466.0" promptText="Address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="3.0" layoutY="476.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="Phone">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="phoneField" prefHeight="39.0" prefWidth="466.0" promptText="Phone">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="540.0" prefHeight="54.0" prefWidth="609.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="55.0" prefWidth="115.0" text="Class ID">
+               <font>
+                  <Font name="Tahoma" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="classComboBox" prefHeight="38.0" prefWidth="458.0" promptText="Class Name" />
+         </children>
+      </HBox>
+      <Button fx:id="addButton" layoutX="199.0" layoutY="611.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Update" />
+      <Button fx:id="cleanButton" layoutX="352.0" layoutY="611.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="90.0" text="Clean" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

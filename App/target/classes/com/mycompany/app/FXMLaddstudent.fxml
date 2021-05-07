@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="619.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.mycompany.app.FXMLaddstudentController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/App/images/iconstudent.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="225.0" layoutY="41.0" text="STUDENT INFORMATION">
+         <font>
+            <Font name="Tahoma Bold" size="24.0" />
+         </font>
+      </Label>
+      <HBox layoutX="182.0" layoutY="88.0" prefHeight="100.0" prefWidth="416.0">
+         <children>
+            <Label text="First Name">
+               <font>
+                  <Font name="Tahoma" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="32.0" layoutY="209.0" prefHeight="76.0" prefWidth="560.0" />
+      <HBox layoutX="32.0" layoutY="325.0" prefHeight="100.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
